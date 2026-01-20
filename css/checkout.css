@@ -1,0 +1,111 @@
+ :root {
+    --dorado: #D4A857;
+    --dorado-suave: #FFD700;
+    --negro: #36454E;
+    --gris-oscuro: #2A2A2A;
+    --blanco: #ffffff;
+}
+body {
+  font-family: 'Montserrat', sans-serif;;
+  background-color:var(--negro);
+  color: var(--blanco);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  row-gap: 0.5rem;
+}
+.row h3{
+  margin: 1rem;
+}
+
+.col-25 {
+  flex: 30%;
+
+}
+
+.col-50 {
+  flex: 50%;
+}
+
+.col-75 {
+  flex: 70%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: var(--gris-oscuro);
+  padding: 5px 20px 15px 20px;
+  border-radius: 15px;
+  margin: 1rem;
+}
+
+.inputCheckout {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid var(--dorado-suave);
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: var(--blanco);
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+  
+}
+
+hr {
+  border: 1px solid rgb(156, 8, 8);
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}

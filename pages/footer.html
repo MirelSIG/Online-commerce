@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer - Symphony</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <footer class="main-footer">
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <button class="lang-btn active" data-lang="es_COMPLETO" onclick="idioma.changeLanguage('es_COMPLETO')">
+                   ES
+            </button>
+            <button class="lang-btn" data-lang="en_COMPLETO" onclick="idioma.changeLanguage('en_COMPLETO')">
+                   EN
+            </button>
+            <button class="lang-btn" data-lang="eu_COMPLETO" onclick="idioma.changeLanguage('eu_COMPLETO')">
+                   EU
+            </button>
+        </div>
+        <div class="footer-content">
+            <!-- Categorías -->
+            <div class="footer-section categorias">
+                <div class="divider"></div>
+                <h3 data-idioma="footer.categories">CATEGORIAS</h3>
+                <ul>
+                    <li><span class="bullet"></span><a href="#" data-idioma="footer.categoriesList.strings">Cuerdas</a>
+                    </li>
+                    <li><span class="bullet"></span><a href="#"
+                            data-idioma="footer.categoriesList.percussion">Percusion</a></li>
+                    <li><span class="bullet"></span><a href="#" data-idioma="footer.categoriesList.keyboards">Teclados y
+                            Pianos</a></li>
+                    <li><span class="bullet"></span><a href="#" data-idioma="footer.categoriesList.wind">Viento</a></li>
+                    <li><span class="bullet"></span><a href="#"
+                            data-idioma="footer.categoriesList.accessories">Complementos y Acesorios</a></li>
+                </ul>
+            </div>
+
+            <!-- Información -->
+            <div class="footer-section informacion">
+                <div class="divider"></div>
+                <h3 data-idioma="footer.information">INFORMACION</h3>
+                <ul>
+                    <li><span class="bullet"></span><a href="#" data-idioma="footer.informationList.privacy">Política de
+                            Privacidad</a></li>
+                    <li><span class="bullet"></span><a href="#" data-idioma="footer.informationList.terms">Términos y
+                            Condiciones</a></li>
+                    <li><span class="bullet"></span><a href="#" data-idioma="footer.informationList.legal">Aviso Legal</a>
+                    </li>
+                    <li><span class="bullet"></span><a href="#" data-idioma="footer.informationList.cookies">Política de
+                            Cookies</a></li>
+                    <li><span class="bullet"></span><a href="#" data-idioma="footer.informationList.warranty">Garantías y
+                            Devoluciones</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-section contacto">
+                <div class="divider"></div>
+                <h3 data-idioma="footer.contact">contacto</h3>
+                <ul>
+                    <li><span class="bullet"></span><span data-idioma="footer.contactInfo.phone">+53 (555) 123-456</span>
+                    </li>
+                    <li><span class="bullet"></span><span data-idioma="footer.contactInfo.email">info@symphony.com</span>
+                    </li>
+                    <li><span class="bullet"></span><span data-idioma="footer.contactInfo.address">Calle Armonía 123,
+                            Ciudad Musical</span></li>
+                    <li><span class="bullet"></span><span data-idioma="footer.contactInfo.hours">Lunes-viernes: 10:00 -
+                            19:00</span><br><span data-idioma="footer.contactInfo.hoursWeekend">Sabados: 11:00 a
+                            14:00</span></li>
+                </ul>
+            </div>
+
+            <!-- Siguenos y Métodos de Pago -->
+            <div class="footer-section siguenos">
+                <h3 data-idioma="footer.followUs">SIGUENOS</h3>
+                <div class="social-icons">
+                    <a href="#" class="icon facebook">
+                        <img src="../img/f.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="icon whatsapp">
+                        <img src="../img/w.png" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="icon instagram">
+                        <img src="../img/I.png" alt="Instagram">
+                    </a>
+                </div>
+
+                <h4 data-idioma="footer.paymentMethods">Metodos de Pagos</h4>
+                <div class="payment-icons">
+                    <div class="payment-method paypal">
+                        <img src="../img/pay.png" alt="PayPal">
+                    </div>
+                    <div class="payment-method applepay">
+                        <img src="../img/payiiii.png" alt="Apple Pay">
+                    </div>
+                    <div class="payment-method mastercard">
+                        <img src="../img/master.png" alt="Mastercard">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <span data-idioma="footer.copyright">© 2024 Symphony - Tienda de Instrumentos Musicales</span>
+        </div>
+    </footer>
+
+    <!-- idioma Script -->
+    <script src="../js/idioma.js"></script>
+</body>
+
+</html>

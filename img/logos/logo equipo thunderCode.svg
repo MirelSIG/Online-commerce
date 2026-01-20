@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="482.81732"
+   height="328.07874"
+   viewBox="0 0 127.74541 86.804165"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="logo equipo thunderCode.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.0557596"
+     inkscape:cx="13.260594"
+     inkscape:cy="278.47248"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-66.931181,-21.660211)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.2243px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.3585;stroke-linecap:round"
+       x="131.02496"
+       y="108.27213"
+       id="text294"><tspan
+         sodipodi:role="line"
+         id="tspan292"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.3585"
+         x="131.02496"
+         y="108.27213">ThunderCode</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87777px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;fill:none;stroke:#ffffff;stroke-width:6.35;stroke-linecap:round"
+       x="51.038242"
+       y="107.42148"
+       id="text298"><tspan
+         sodipodi:role="line"
+         id="tspan296"
+         style="stroke-width:6.35"
+         x="51.038242"
+         y="107.42148" /></text>
+    <g
+       id="g2860"
+       transform="translate(17.241388)"
+       style="fill:#000000;fill-opacity:1">
+      <path
+         style="color:#000000;fill:#000000;fill-opacity:1;stroke-linecap:round;-inkscape-stroke:none"
+         d="M 95.068359,31.097656 66.414062,55.791016 94.691406,78.074219 A 2.9760301,2.9760301 0 0 0 98.871094,77.578125 2.9760301,2.9760301 0 0 0 98.375,73.400391 L 75.771484,55.585937 98.955078,35.607422 a 2.9760301,2.9760301 0 0 0 0.310547,-4.197266 2.9760301,2.9760301 0 0 0 -4.197266,-0.3125 z"
+         id="path1236" />
+      <path
+         style="color:#000000;fill:#000000;fill-opacity:1;stroke-linecap:round;-inkscape-stroke:none"
+         d="m 129.89453,30.384766 a 2.9760301,2.9760301 0 0 0 -2.03515,1.02539 2.9760301,2.9760301 0 0 0 0.31249,4.197266 L 151.35547,55.585937 128.75,73.400391 a 2.9760301,2.9760301 0 0 0 -0.49609,4.177734 2.9760301,2.9760301 0 0 0 4.17968,0.496094 l 28.27735,-22.283203 -28.6543,-24.69336 a 2.9760301,2.9760301 0 0 0 -2.16211,-0.71289 z"
+         id="path2123" />
+      <path
+         style="color:#000000;fill:#000000;fill-opacity:1;stroke-width:1.87466;stroke-linecap:round;-inkscape-stroke:none"
+         d="M 117.17413,21.660211 99.198545,69.406923 116.52639,55.456768 108.95834,88.128425 125.8979,41.176594 109.91382,53.673151 Z"
+         id="path2125"
+         sodipodi:nodetypes="ccccccc" />
+    </g>
+  </g>
+</svg>

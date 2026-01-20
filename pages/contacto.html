@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <nav id="navbar"></nav>
+
+    <main id="app">
+        <div id="drawCart"></div>
+    </main>
+
+    <div class="container">
+
+        <!-- GRID: INFORMACIÓN + FORMULARIO -->
+        <div class="grid">
+
+            <!-- INFORMACIÓN -->
+            <div class="card">
+                <h2 data-idioma="contact.title">Información de contacto :</h2>
+
+                <p><strong data-idioma="contact.address">Dirección:</strong><br>Calle Armonía 123, Ciudad Musical</p>
+                <p><strong data-idioma="contact.phone">Teléfono:</strong><br> +53 (555) 123-456</p>
+                <p><strong data-idioma="contact.email">Correo:</strong><br>info@symphony.com</p>
+                <p><strong data-idioma="contact.whatsapp">WhatsApp:</strong><br>+53 (555) 123-456 </p>
+
+               <p><strong data-idioma="contact.schedule">Horario de Atención :</strong><br>
+                    <span data-idioma="contact.weekdays">Lunes a Viernes:10:00 AM – 7:00 PM</span><br>
+                    <span data-idioma="contact.saturday">Sábados: 11:00 AM – 2:00 PM</span><br>
+                    <span data-idioma="contact.sunday">Domingos: Cerrado</span>
+                </p>
+
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="card">
+                <h2 data-idioma="contact.formTitle">Envíanos un mensaje :</h2>
+                <form id="contactForm">
+                    <input type="text" name="nombre" data-idioma="contact.formName" data-idioma-placeholder
+                        placeholder="Tu nombre" required>
+                    <input type="email" name="correo" data-idioma="contact.formEmail" data-idioma-placeholder
+                        placeholder="Tu correo electrónico" required>
+                    <input type="text" name="telefono" data-idioma="contact.formPhone" data-idioma-placeholder
+                        placeholder="Teléfono (opcional)">
+                    <textarea name="mensaje" rows="6" data-idioma="contact.formMessage" data-idioma-placeholder
+                        placeholder="Escribe tu mensaje..." required></textarea>
+                    <button type="submit" data-idioma="contact.formSubmit">Enviar mensaje</button>
+                </form>
+
+            </div>
+            <div id="result">
+            </div>
+
+        </div>
+
+        <!-- MAPA / UBICACIÓN -->
+        <h2 style="margin-top:50px;" data-idioma="contact.location">Nuestra ubicación :</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509427!2d144.95373531590467!3d-37.81627974201347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzE2LjQiRQ!5e0!3m2!1ses!2s!4v0000000000000"></iframe>
+
+        <!-- FAQ -->
+        <h2 style="margin-top:50px;" data-idioma="contact.faq">Preguntas frecuentes :</h2>
+
+        <details>
+            <summary data-idioma="contact.faqQ1">¿Realizan envíos a todo el país?</summary>
+            <span data-idioma="contact.faqA1">Sí, enviamos a cualquier ciudad mediante paquetería segura.</span>
+        </details>
+
+        <details>
+            <summary data-idioma="contact.faqQ2">¿Ofrecen garantía en los instrumentos?</summary>
+            <span data-idioma="contact.faqA2">Todos nuestros productos cuentan con garantía y soporte técnico.</span>
+        </details>
+
+        <details>
+            <summary data-idioma="contact.faqQ3">¿Puedo probar un instrumento antes de comprar?</summary>
+            <span data-idioma="contact.faqA3">Sí, si visitas nuestra tienda física puedes probar cualquier
+                instrumento.</span>
+        </details>
+
+        <details>
+            <summary data-idioma="contact.faqQ4">¿Aceptan pagos a meses?</summary>
+            <span data-idioma="contact.faqA4">Sí, contamos con pagos con tarjeta a plazos (dependiendo del
+                banco).</span>
+        </details>
+
+    </div>
+
+    <!-- BOTÓN DE WHATSAPP -->
+    <a class="whatsapp" href="https://wa.me/0000000000" target="_blank" rel="noopener">💬</a>
+
+    <footer id="footer"></footer>
+
+    <script src="../js/idioma.js"></script>
+    <script src="../js/contacto.js"></script>
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

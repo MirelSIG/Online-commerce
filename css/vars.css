@@ -1,0 +1,24 @@
+:root{
+  --accent: #5b8cff;
+  --bg: rgba(255,255,255,0.75);
+  --glass: rgba(255,255,255,0.12);
+  --muted: #6b7280;
+  --radius: 1.2rem;
+  --shadow: 0 0.1rem 0.3rem rgba(11, 20, 40, 0.15);
+  --gap-lg: 1rem;
+  --gap-md: 0.75rem;
+  --gap-sm: 0.5rem;
+  --p-lg: 1rem;
+  --p-md: 0.75rem;
+  --p-sm: 0.5rem;
+  --m-lg: 1rem;
+  --m-md: 0.75rem;
+  --m-sm: 0.5rem;
+  --color1: #9370DB; 
+  --color2: #FFD700; 
+  --color3: #36454E;
+  --text-color: #36454E;
+  --radius07: 0.75rem;
+  --font-titles: "Sofia", cursive, "Montserrat", sans-serif;
+  --font-text:"Montserrat", sans-serif;
+}
