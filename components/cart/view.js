@@ -1,7 +1,7 @@
-import { cartTemplate } from "./template.js"
-import { cartController } from "./controller.js"
-import { cartViewResume } from "./viewResume.js"
-import { cart } from "./cart.js"
+import { cartTemplate } from "./template.js?v=2026012101"
+import { cartController } from "./controller.js?v=2026012101"
+import { cartViewResume } from "./viewResume.js?v=2026012101"
+import { cart } from "./cart.js?v=2026012101"
 
 export const cartView = {
     id: `cart`,
