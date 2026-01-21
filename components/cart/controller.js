@@ -7,11 +7,15 @@ export const cartController = {
     subTotalItems: 0,
     totalOrder: 0,
     init(){
+        console.log('🛒 CartController.init() - Inicializando datos del carrito');
         this.setData()
+        console.log('🛒 CartController inicializado con', this.items.length, 'items');
     },
     addItem(id){
+        console.log('🛒 Agregando item con ID:', id);
         const product = productsController.getById(id)
         if (product.status) {
+            console.log('✅ Producto encontrado:', product.data[0].nombre);
             const itemExists = this.getItemById(id)            
             const item = itemExists.status ? itemExists.data[0] : product.data[0]
             item.quantity = itemExists.status ? item.quantity + 1 : 1
@@ -19,6 +23,9 @@ export const cartController = {
             item.totalPriceItem = (item.precio * item.quantity)            
             itemExists.status ? this.items[itemExists.indexItem] = item : this.items.unshift(item)
             this.updateState()
+            console.log('✅ Item agregado. Total items en carrito:', this.items.length);
+        } else {
+            console.error('❌ Producto no encontrado con ID:', id);
         }
     },
     removeItem(id){

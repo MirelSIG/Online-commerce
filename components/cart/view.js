@@ -94,17 +94,23 @@ export const cartView = {
     },
 
     toggle(){
+        console.log('🛒 CartView.toggle() - Estado actual:', this.statusVisible ? 'visible' : 'oculto');
         if(this.statusVisible && this.exists()){
+            console.log('🛒 Cerrando carrito');
             this.remove()
         }
         else {
+            console.log('🛒 Abriendo carrito');
             this.init()
         }
     },
 
     addItem(id) {
+        console.log('🛒 CartView.addItem() - ID:', id);
         cartController.addItem(id)
         this.updateCartCount()
+        console.log('🛒 Contador actualizado');
+    }
 
         if (this.statusVisible) {
             this.draw()

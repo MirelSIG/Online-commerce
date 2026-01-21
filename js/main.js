@@ -26,11 +26,17 @@ navbar.render();
 hero.render();
 footer.render();   // ← solo una vez
 
-console.log('Renderizando productos...');
-productsController.render();
-console.log('Productos renderizados');
+// 3. Renderizar productos SOLO si existe el contenedor (página index)
+const catalogoContainer = document.getElementById("catalogo-container");
+if (catalogoContainer) {
+    console.log('Renderizando productos...');
+    productsController.render();
+    console.log('Productos renderizados');
+} else {
+    console.log('⏭️ Página sin catálogo (detalle, contacto, etc.) - omitiendo render de productos');
+}
 
-// 3. Inicializar carrito (después de renderizar header)
+// 4. Inicializar carrito (después de renderizar header)
 console.log('🛒 Inicializando carrito...');
 cart.init();
 console.log('🛒 Carrito inicializado');
