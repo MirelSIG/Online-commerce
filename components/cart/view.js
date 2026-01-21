@@ -27,17 +27,25 @@ export const cartView = {
     getTemplate() {
         try {
             const obj = cartController.getData()
-            const html ={
+            const html = {
                 items: ``,
-                footer:``
+                footer: ``
             }
-            obj.items.forEach(function(value, index){
-                html.items+=cartTemplate.item(value)
-            })
+            
+            // Verificar que obj.items existe y es un array
+            if (obj && obj.items && Array.isArray(obj.items)) {
+                obj.items.forEach(function(value, index){
+                    html.items += cartTemplate.item(value)
+                })
+            } else {
+                console.warn('Carrito vacío o items no definidos')
+            }
+            
             html.footer = cartTemplate.footer(obj)            
             return cartTemplate.init(obj, html)
         } catch (error) {
             console.error('Error al cargar el template del carrito:', error)
+            return '<div class="cart-error">Error al cargar el carrito</div>'
         }
     },
 

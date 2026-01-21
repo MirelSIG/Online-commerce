@@ -9,7 +9,20 @@
         "guitar": "Guitar",
         "amplification": "Amplification",
         "effects": "Effects",
-        "bass": "Bass"
+        "bass": "Bass",
+        "strings": "Strings",
+        "wind": "Wind",
+        "percussion": "Percussion",
+        "keyboards": "Keyboards and pianos",
+        "accessories": "Accessories and complements"
+    },
+    "hero": {
+        "title": "Welcome to Symphony Store",
+        "subtitle": "Your musical instruments store",
+        "delivery": "Fast delivery",
+        "shipping": "Free shipping on orders over €100",
+        "warranty": "Extended warranty",
+        "payment": "Secure payment"
     },
     "contact": {
         "title": "Contact information:",

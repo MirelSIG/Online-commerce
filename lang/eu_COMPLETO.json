@@ -9,7 +9,20 @@
         "guitar": "Gitarra",
         "amplification": "Anplifikazioa",
         "effects": "Efektuak",
-        "bass": "Baxuak"
+        "bass": "Baxuak",
+        "strings": "Kordak",
+        "wind": "Haize-instrumentuak",
+        "percussion": "Perkusioa",
+        "keyboards": "Teklatuak eta pianoak",
+        "accessories": "Osagarriak eta aksesuak"
+    },
+    "hero": {
+        "title": "Ongi etorri Symphony Store-ra",
+        "subtitle": "Zure musika tresnen denda",
+        "delivery": "Bidalketa azkarra",
+        "shipping": "Bidalketa doakoa €100 baino gehiagoko erosketetan",
+        "warranty": "Berme hedatua",
+        "payment": "Ordainketa segurua"
     },
     "contact": {
         "title": "Kontaktu informazioa:",

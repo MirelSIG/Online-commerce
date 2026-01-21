@@ -9,7 +9,20 @@
     "guitar": "Guitarra",
     "amplification": "Amplificación",
     "effects": "Efectos",
-    "bass": "Bajos"
+    "bass": "Bajos",
+    "strings": "Cuerdas",
+    "wind": "Viento",
+    "percussion": "Percusión",
+    "keyboards": "Teclados y pianos",
+    "accessories": "Complementos y accesorios"
+  },
+  "hero": {
+    "title": "Bienvenido a Symphony Store",
+    "subtitle": "Tu tienda de instrumentos musicales",
+    "delivery": "Envío rápido",
+    "shipping": "Envío gratis en compras mayores a €100",
+    "warranty": "Garantía extendida",
+    "payment": "Pago seguro"
   },
   "contact": {
     "title": "Información de contacto :",
