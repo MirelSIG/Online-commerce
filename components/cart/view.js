@@ -1,7 +1,7 @@
 import { cartTemplate } from "./template.js?v=2026012101"
 import { cartController } from "./controller.js?v=2026012101"
 import { cartViewResume } from "./viewResume.js?v=2026012101"
-import { cart } from "./cart.js?v=2026012101"
+// Removido import circular de cart.js
 
 export const cartView = {
     id: `cart`,
