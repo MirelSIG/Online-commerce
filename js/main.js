@@ -14,15 +14,21 @@ import { hero } from "./hero.js";
 // IMPORTAR PRODUCTOS DESDE EL MÓDULO JS (NO JSON)
 import { products } from "../data_js/products.js";
 
+console.log('Main.js cargado - Productos importados:', products.length);
+
 // 1. Cargar datos SIN FETCH
 productsController.data = products;
+console.log('Productos asignados al controlador:', productsController.data.length);
 
 // 2. Renderizar componentes estáticos
 header.init();
 navbar.render();
 hero.render();
 footer.render();   // ← solo una vez
+
+console.log('Renderizando productos...');
 productsController.render();
+console.log('Productos renderizados');
 
 // 3. Inicializar carrito (después de renderizar header)
 cart.init();

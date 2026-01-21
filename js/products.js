@@ -125,20 +125,26 @@ export const productsController = {
     },
     /* no borrar lo de arriba */
     render() {
+        console.log('🎯 ProductsController.render() iniciado');
+        console.log('📦 Productos en data:', this.data ? this.data.length : 'null');
+        
         // 1) Precondiciones
         if (!this.data || this.data.length === 0) {
-            console.warn("No hay productos para renderizar.")
+            console.warn("❌ No hay productos para renderizar.")
             return
         }
 
         const contenedorGeneral = document.getElementById("catalogo-container")
+        console.log('📍 Contenedor encontrado:', contenedorGeneral ? 'SI' : 'NO');
+        
         if (!contenedorGeneral) {
-            console.log("No se encontró el contenedor #catalogo-container")
+            console.error("❌ No se encontró el contenedor #catalogo-container")
             return
         }
 
         // 2) Limpieza del contenedor
         contenedorGeneral.innerHTML = ""
+        console.log('🧹 Contenedor limpiado');
 
         // 3) Agrupación de productos por categoría
         const categorias = {}
@@ -188,8 +194,12 @@ export const productsController = {
             contenedorGeneral.appendChild(seccion)
         }
 
+        console.log(`✅ Renderizadas ${Object.keys(categorias).length} categorías`);
+
         // 6) Escuchador de botones "Añadir al carrito"
         const btnsAddToCart = document.querySelectorAll(".cartAddItemBtn")
+        console.log(`🛒 Botones de carrito encontrados: ${btnsAddToCart.length}`);
+        
         if (btnsAddToCart.length > 0) {
             btnsAddToCart.forEach(btnElement => {
                 const id = Number(btnElement.dataset.id)
@@ -199,13 +209,16 @@ export const productsController = {
                 })
             })
         } else {
-            console.log(`no se encontraron los botones de añadir al carrito`);
+            console.log(`⚠️ no se encontraron los botones de añadir al carrito`);
         }
         /* Fin del escuchador no borrar :) */
 
         // NO BORRAR: Traduce los productos nuevos
         if (window.idioma) {
             window.idioma.translatePage();
+            console.log('🌍 Productos traducidos');
         }
+        
+        console.log('✨ Render de productos completado exitosamente');
     }
 }
