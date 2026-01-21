@@ -49,15 +49,13 @@ export const navbar = {
                 const isInPages = path.includes('/pages/')
                 
                 if (isInPages) {
-                    // Estamos en una página secundaria, redirigir al index
+                    // Estamos en una página secundaria, usar ruta relativa
                     window.location.href = `../index.html#${targetId}`
                 } else {
                     // Estamos en index, hacer scroll
                     const section = document.getElementById(targetId)
                     if (section) {
                         section.scrollIntoView({ behavior: "smooth", block: "start" })
-                    } else {
-                        console.warn(`Sección no encontrada: ${targetId}`)
                     }
                 }
             })
