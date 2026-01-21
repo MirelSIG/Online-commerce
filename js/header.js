@@ -32,10 +32,8 @@ export const header = {
                 window.idioma.translatePage();
             }
 
-            // Reloj
-            if (headerTemplate.initDateTime) {
-                headerTemplate.initDateTime();
-            }
+            // Inicializar reloj después de renderizar el HTML
+            headerTemplate.initDateTime();
         }
     },
 

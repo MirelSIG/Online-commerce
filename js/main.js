@@ -31,17 +31,22 @@ productsController.render();
 console.log('Productos renderizados');
 
 // 3. Inicializar carrito (después de renderizar header)
+console.log('🛒 Inicializando carrito...');
 cart.init();
+console.log('🛒 Carrito inicializado');
 
 // 4. Evento para abrir/cerrar el carrito
+console.log('🛒 Buscando botón del carrito con ID:', cart.idBtnCart);
 const btnCart = document.querySelector(`#${cart.idBtnCart}`);
 if (btnCart) {
+    console.log('🛒 Botón del carrito encontrado, agregando listener');
     btnCart.addEventListener("click", function(e){
         e.preventDefault();
+        console.log('🛒 Click en botón del carrito');
         cart.toggle();
     });
 } else {
-  console.log("Botón del carrito no encontrado. ¿Está cart.idBtnCart correctamente definido?");
+  console.error('❌ Botón del carrito NO encontrado. ID esperado:', cart.idBtnCart);
 }
 
 // 5. Formularios específicos
