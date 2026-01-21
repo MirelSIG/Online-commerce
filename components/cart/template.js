@@ -72,19 +72,23 @@ export const cartTemplate = {
         `
     },
     footer(obj){
+        const subTotalIva = obj?.subTotalIva || 0;
+        const subTotalItems = obj?.subTotalItems || 0;
+        const totalOrder = obj?.totalOrder || 0;
+        
         return `
             <div class="cartFooter">
                 <div class="cartTotalRow">
                     <div class="cartSubTotal">Subtotal IVA:</div>
-                    <div id="cartSubTotalIva" class="cartSubTotalPrice">€${obj.subTotalIva.toFixed(2)}</div>
+                    <div id="cartSubTotalIva" class="cartSubTotalPrice">€${subTotalIva.toFixed(2)}</div>
                 </div>
                 <div class="cartTotalRow">
                     <div class="cartSubTotal">Subtotal Productos:</div>
-                    <div id="cartSubTotal" class="cartSubTotalPrice">€${obj.subTotalItems.toFixed(2)}</div>
+                    <div id="cartSubTotal" class="cartSubTotalPrice">€${subTotalItems.toFixed(2)}</div>
                 </div>
                 <div class="cartTotalRow">
                     <div class="cartSubTotal">Total:</div>
-                    <div id="cartTotal" class="cartSubTotalPrice">€${obj.totalOrder.toFixed(2)}</div>
+                    <div id="cartTotal" class="cartSubTotalPrice">€${totalOrder.toFixed(2)}</div>
                 </div>
                 <div id="cartCheckoutMsg" class="cartCheckoutMsg"></div>
                 <div class="">

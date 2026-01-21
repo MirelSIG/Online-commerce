@@ -135,24 +135,33 @@ export const cartController = {
     },
     setData(){
         try {
+            console.log('🛒 CartController.setData() - Cargando datos');
             const result = {}
             const cartLS = this.getLocalStorage()            
             if (cartLS.status) {
                 const cart = cartLS.data                
-                this.items = cart.items 
-                this.cartCount = cart.cartCount
-                this.subTotalIva = cart.subTotalIva,
-                this.subTotalItems = cart.subTotalItems,
-                this.totalOrder = cart.totalOrder
+                this.items = cart.items || []
+                this.cartCount = cart.cartCount || 0
+                this.subTotalIva = cart.subTotalIva || 0
+                this.subTotalItems = cart.subTotalItems || 0
+                this.totalOrder = cart.totalOrder || 0
                 result.status = true
-                result.msg = `data actualizada utiliza getData() para obtenerla`                
+                result.msg = `data actualizada desde localStorage`
+                console.log('✅ Datos cargados desde localStorage:', this.items.length, 'items');
             } else {
+                // Inicializar con valores por defecto si no hay localStorage
+                this.items = []
+                this.cartCount = 0
+                this.subTotalIva = 0
+                this.subTotalItems = 0
+                this.totalOrder = 0
                 result.status = false
-                result.msg = cartLS.msg                
+                result.msg = 'Carrito vacío - inicializado con valores por defecto'
+                console.log('⚠️ No hay datos en localStorage, carrito inicializado vacío');
             }            
             return result              
         } catch (error) {
-            console.error('No se pudo enviar la data al controlador del carrito:', error);            
+            console.error('❌ Error al cargar data del carrito:', error);            
         }
     },
     setLocalStorage(obj){
