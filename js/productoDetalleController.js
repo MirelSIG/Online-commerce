@@ -9,34 +9,50 @@ import { cart } from "../components/cart/cart.js";
 productsController.data = products;
 
 export const productoDetalleController = {
-  container: document.getElementById("product-detail"),
+  container: null,
 
   init() {
-    if (!this.container) return;
+    console.log('🔍 Iniciando productoDetalleController');
+    this.container = document.getElementById("product-detail");
+    
+    if (!this.container) {
+      console.error('❌ Contenedor #product-detail no encontrado');
+      return;
+    }
 
-    // Ya no esperamos fetch: los datos están cargados desde el import
+    console.log('✅ Contenedor encontrado');
     this.render();
   },
 
   traerProductoURL() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
+    console.log('🔗 ID del producto desde URL:', id);
     return id ? Number(id) : null;
   },
 
   render() {
     const id = this.traerProductoURL();
-    if (!id) return;
+    if (!id) {
+      console.error('❌ No se encontró ID en la URL');
+      return;
+    }
 
     const product = productsController.data.find(p => p.id === id);
 
     if (!product) {
-      console.error("Producto no encontrado con id:", id);
+      console.error("❌ Producto no encontrado con id:", id);
       return;
     }
 
+    console.log('✅ Producto encontrado:', product.nombre);
     this.container.innerHTML = detalleTemplate.init(product);
     this.agregarCarrito(id);
+    
+    // Traducir después de renderizar
+    if (window.idioma) {
+      window.idioma.translatePage();
+    }
   },
 
   agregarCarrito(productId) {
@@ -52,11 +68,15 @@ export const productoDetalleController = {
           button.disabled = false;
         }, 1000);
       });
+      console.log('🛒 Listener del carrito agregado');
+    } else {
+      console.warn('⚠️ Botón de añadir al carrito no encontrado');
     }
   },
 };
 
 // Iniciar solo en la página de detalle
 document.addEventListener("DOMContentLoaded", () => {
+  console.log('📄 DOM cargado, iniciando controlador de detalle');
   productoDetalleController.init();
 });
