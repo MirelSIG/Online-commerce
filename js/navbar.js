@@ -18,47 +18,48 @@ export const navbar = {
         if (output) {
             output.innerHTML = this.getTemplate({})
 
-            // NO BORRAR: Traduce el contenido nuevo del navbar
             if (window.idioma) {
                 window.idioma.translatePage();
             }
 
-            // Añadido: activa los listeners de categorías
             this.attachCategoryListeners()
         }
     },
 
-    // Añadido: normaliza el nombre de categoría a un ID válido
     normalizeCategoryToId(name) {
         return (name || "").trim().toLowerCase().replace(/\s+/g, "-")
     },
 
-    // Añadido: conecta los botones del navbar con las secciones del catálogo
     attachCategoryListeners() {
         const links = document.querySelectorAll(`#${this.divId} a[data-category]`)
-        if (!links || links.length === 0) return
+        if (!links || links.length === 0) {
+            console.warn('No se encontraron enlaces de categoría en el navbar')
+            return
+        }
 
         links.forEach(link => {
             link.addEventListener("click", (e) => {
                 e.preventDefault()
+
                 const categoryName = link.getAttribute("data-category")
                 const targetId = this.normalizeCategoryToId(categoryName)
-                let section = document.getElementById(targetId)
-
-                if (!section) {
-                    setTimeout(() => {
-                        section = document.getElementById(targetId)
-                        if (section) {
-                            section.scrollIntoView({ behavior: "smooth", block: "start" })
-                        } else {
-                            /* window.location.hash = `#${targetId}` */
-                            window.location.assign(`../index.html#${targetId}`)
-                        }
-                    }, 100)
-                    return
+                
+                // Detectar si estamos en la página de índice
+                const path = window.location.pathname
+                const isInPages = path.includes('/pages/')
+                
+                if (isInPages) {
+                    // Estamos en una página secundaria, redirigir al index
+                    window.location.href = `../index.html#${targetId}`
+                } else {
+                    // Estamos en index, hacer scroll
+                    const section = document.getElementById(targetId)
+                    if (section) {
+                        section.scrollIntoView({ behavior: "smooth", block: "start" })
+                    } else {
+                        console.warn(`Sección no encontrada: ${targetId}`)
+                    }
                 }
-
-                section.scrollIntoView({ behavior: "smooth", block: "start" })
             })
         })
     }

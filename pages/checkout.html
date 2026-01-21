@@ -65,10 +65,10 @@
               <h3 data-idioma="checkout.payment">Pago</h3>
               <label for="fname" data-idioma="checkout.acceptedCards">Tarjetas aceptadas</label>
               <div class="icon-container">
-                <i class="fa-brands fa-cc-visa" style="color:rgb(172, 172, 177);"></i>
-                <i class="fa-brands fa-cc-amex" style="color:rgb(29, 206, 161);"></i>
-                <i class="fa-brands fa-cc-mastercard" style="color:red;"></i>
-                <i class="fa-brands fa-cc-discover" style="color:orange;"></i>
+                <i class="fa-brands fa-cc-visa visa-icon"></i>
+                <i class="fa-brands fa-cc-amex amex-icon"></i>
+                <i class="fa-brands fa-cc-mastercard mastercard-icon"></i>
+                <i class="fa-brands fa-cc-discover discover-icon"></i>
               </div>
               <label for="cname" data-idioma="checkout.cardName">Nombre en tarjeta </label>
               <input class="inputCheckout" type="text" id="cname" name="cardname" data-idioma="checkout.cardNamePlaceholder"
@@ -106,9 +106,10 @@
 
   <footer id="footer"></footer>
   
-  <script type="module" src="../js/main.js"></script>
-  <script src="../js/idioma.js"></script>
+  <script src="./js/fixPaths.js"></script>
+  <script type="module" src="../js/idioma.js"></script>
   <script type="module" src="../js/checkout.js"></script>
+  <script type="module" src="../js/main.js"></script>
 </body>
 
 </html>

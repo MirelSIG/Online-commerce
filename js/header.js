@@ -8,8 +8,7 @@ export const header = {
     cartCount: cart.cartCount,
 
     init() {
-        let exist = document.querySelector(`#${this.divId}`) ? true : false;
-
+        const exist = document.querySelector(`#${this.divId}`) ? true : false;
         if (!exist) {
             this.render();
         }
@@ -24,34 +23,36 @@ export const header = {
     },
 
     render() {
-        let output = document.querySelector(`#${this.id}`);
+        const output = document.querySelector(`#${this.id}`);
         if (output) {
-            output.innerHTML = this.getTemplate({ cartCount: this.cartCount });
+            output.innerHTML = this.getTemplate({ cartCount: cart.cartCount });
 
-            // NO BORRAR: Traduce el contenido nuevo del header
+            // Traducción
             if (window.idioma) {
                 window.idioma.translatePage();
             }
 
+            // Reloj
+            if (headerTemplate.initDateTime) {
+                headerTemplate.initDateTime();
+            }
         }
     },
 
-
-
     async buscarInstrumentos(buscar) {
-        const respuesta = await fetch("/data/products.json");
+        // ❗ Debe usar ruta dinámica, no absoluta
+        const base = window.location.pathname.includes("pages") ? ".." : ".";
+        const respuesta = await fetch(`${base}/data/products.json`);
         const instrumento = await respuesta.json();
 
-        const resultados = instrumento.filter(item =>
+        return instrumento.filter(item =>
             item.nombre.toLowerCase().includes(buscar.toLowerCase())
         );
-
-        return resultados;
     },
 
     mostrarResultados(resultados) {
         const contenedor = document.getElementById("search-results");
-        contenedor.innerHTML = ""; // este me permite borrar resultado 
+        contenedor.innerHTML = "";
 
         if (resultados.length === 0) {
             contenedor.innerHTML = "<p>No se encontraron resultados</p>";
@@ -64,18 +65,11 @@ export const header = {
             div.innerHTML = `<p>${item.nombre}</p>`;
 
             div.addEventListener("click", () => {
-                window.location.href = `../pages/paginaDetalle.html?id=${item.id}`;
+                const base = window.location.pathname.includes("pages") ? ".." : ".";
+                window.location.href = `${base}/pages/paginaDetalle.html?id=${item.id}`;
             });
 
             contenedor.appendChild(div);
         });
-    },
-
-render() {
-  const output = document.querySelector(`#${this.id}`);
-  if (output) {
-    output.innerHTML = this.getTemplate({ cartCount: cart.cartCount });
-    headerTemplate.initDateTime(); // Aquí se activa el reloj
-  }
-}
-}
+    }
+};

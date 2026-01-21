@@ -1,4 +1,4 @@
-import { cart } from "../components/cart/cart.js"
+import { cart } from "../components/cart/cart.js";
 
 const form = document.getElementById("checkoutForm");
 
@@ -11,13 +11,14 @@ form.addEventListener("submit", function (event) {
   const mes = document.getElementById("expmonth").value.trim();
   const año = document.getElementById("expyear").value.trim();
   const cvv = document.getElementById("cvv").value.trim();
-  // VALIDACIÓN DEL Cliente
+
+  // VALIDACIÓN DEL CLIENTE
   const nombre = document.getElementById("fname").value.trim();
   const email = document.getElementById("email").value.trim();
-  const direccion =  document.getElementById("adr").value.trim();
+  const direccion = document.getElementById("adr").value.trim();
   const ciudad = document.getElementById("city").value.trim();
   const estado = document.getElementById("state").value.trim();
-  const zip =document.getElementById("zip").value.trim();
+  const zip = document.getElementById("zip").value.trim();
 
   // Validación de campos vacíos
   if (
@@ -37,42 +38,40 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
- // Convertimos el valor a cadena y eliminamos espacios
-const numeroTarjetaLimpio = numeroTarjeta.split(' ').join('');
+  // Validación número tarjeta
+  const numeroTarjetaLimpio = numeroTarjeta.replace(/\s+/g, "");
+  if (numeroTarjetaLimpio.length !== 16 || isNaN(Number(numeroTarjetaLimpio))) {
+    alert("Pago rechazado: Número de tarjeta inválido.");
+    return;
+  }
 
-// Verificamos que tenga exactamente 16 dígitos y que sea un número
-if (numeroTarjetaLimpio.length !== 16 || isNaN(Number(numeroTarjetaLimpio))) {
-  alert("Pago rechazado: Número de tarjeta inválido.");
-  return;
-}
-  // Convertimos el mes ingresado a número
-const mesNumero = Number(mes);
+  // Validación mes
+  const mesNumero = Number(mes);
+  if (isNaN(mesNumero) || mesNumero < 1 || mesNumero > 12) {
+    alert("Pago rechazado: Mes de expiración inválido.");
+    return;
+  }
 
-// Verificamos que sea un número entre 1 y 12
-if (isNaN(mesNumero) || mesNumero < 1 || mesNumero > 12) {
-  alert("Pago rechazado: Mes de expiración inválido.");
-  return;
-}
-  // Obtener el año actual
-const añoActual = new Date().getFullYear();
+  // Validación año
+  const añoActual = new Date().getFullYear();
+  const añoIngresado = Number(año);
+  if (isNaN(añoIngresado) || añoIngresado < añoActual) {
+    alert("Pago rechazado: Año de expiración inválido.");
+    return;
+  }
 
-// Obtener el año ingresado por el usuario y convertirlo a número
-const añoIngresado = Number(document.getElementById("expyear").value);
+  // Validación CVV
+  if (isNaN(Number(cvv)) || cvv.length !== 3) {
+    alert("Pago rechazado: CVV inválido.");
+    return;
+  }
 
-// Verificar si el año ingresado es menor que el año actual o no es un número válido
-if (isNaN(añoIngresado) || añoIngresado < añoActual) {
-  alert("Pago rechazado: Año de expiración inválido.");
-  return;
-}
+  // VALIDAR QUE EL CARRITO NO ESTÉ VACÍO
+  if (cart.items.length === 0) {
+    alert("No puedes pagar: el carrito está vacío.");
+    return;
+  }
 
-  // Convertimos el CVV a número
-const cvvNumero = Number(cvv);
-
-// Verificamos que sea un número de 3 dígitos
-if (isNaN(cvvNumero) || cvv.length !== 3) {
-  alert("Pago rechazado: CVV inválido.");
-  return;
-}
   // CREAR OBJETO ORDEN
   const orden = {
     cliente: {
@@ -89,27 +88,27 @@ if (isNaN(cvvNumero) || cvv.length !== 3) {
       mes,
       año,
       cvv
-    }
+    },
+    productos: cart.items, // ← CONECTA EL CARRITO
+    fecha: new Date().toISOString()
   };
 
   // GUARDAR EN LOCALSTORAGE
-  const ordenes = JSON.parse(localStorage.getItem("ordenes")) || [];git
+  const ordenes = JSON.parse(localStorage.getItem("ordenes")) || [];
 
   // Evitar duplicar emails
- if (ordenes.some(o => o.cliente.email === orden.cliente.email)) {
-  return alert("Este email ya ha sido registrado. Por favor usa otro.");
-}
-  // Guardar el cliente
- /* const clientes = JSON.parse(localStorage.getItem("clientes")) || [];
-  clientes.push(orden.cliente);
-  localStorage.setItem("clientes", JSON.stringify(clientes));*/
+  if (ordenes.some(o => o.cliente.email === orden.cliente.email)) {
+    return alert("Este email ya ha sido registrado. Por favor usa otro.");
+  }
 
   ordenes.push(orden);
   localStorage.setItem("ordenes", JSON.stringify(ordenes));
 
- form.reset();
+  // VACIAR CARRITO DESPUÉS DEL PAGO
+  cart.clear();
+
+  form.reset();
 
   alert("Pago aceptado. ¡Gracias por su compra!");
   console.log(localStorage.getItem("ordenes"));
-
 });
