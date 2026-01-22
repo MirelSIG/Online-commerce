@@ -1,4 +1,4 @@
-# Symphony Store - Tienda Online de Instrumentos Musicales
+# Song Musical - Tienda Online de Instrumentos Musicales
 
 ## 🎵 Descripción
 Tienda online de instrumentos musicales desarrollada con JavaScript vanilla (sin frameworks). Sitio multi-idioma (Español, Inglés, Euskera) con carrito de compras funcional.
@@ -110,10 +110,6 @@ Los archivos de traducción están en `/lang/*.json`
 Este proyecto es de código abierto para propósitos educativos.
 
 ## 👨‍💻 Desarrollo
-
-Para contribuir o modificar el proyecto, consulta las guías en:
-- `.github/copilot-instructions.md` - Guía para agentes de IA
-- Documentación inline en el código
 
 ## 🐛 Solución de Problemas
 
