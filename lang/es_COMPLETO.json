@@ -17,8 +17,8 @@
     "accessories": "Complementos y accesorios"
   },
   "hero": {
-    "title": "Bienvenido a Symphony Store",
-    "subtitle": "Tu tienda de instrumentos musicales",
+    "title": "Bienvenido a CitrusSound",
+    "subtitle": "Tu música empieza aquí, hazla sonar",
     "delivery": "Envío rápido",
     "shipping": "Envío gratis en compras mayores a €100",
     "warranty": "Garantía extendida",
@@ -103,7 +103,7 @@
     "contact": "contacto",
     "followUs": "SIGUENOS",
     "paymentMethods": "Metodos de Pagos",
-    "copyright": "© 2024 Symphony - Tienda de Instrumentos Musicales",
+    "copyright": "© 2024 CitrusSound - Tienda de Instrumentos Musicales",
     "categoriesList": {
       "strings": "Cuerdas",
       "percussion": "Percusion",
@@ -120,7 +120,7 @@
     },
     "contactInfo": {
       "phone": "+53 (555) 123-456",
-      "email": "info@symphony.com",
+      "email": "info@citrussound.com",
       "address": "Calle Armonía 123, Ciudad Musical",
       "hours": "Lunes-viernes: 10:00 - 19:00",
       "hoursWeekend": "Sabados: 11:00 a 14:00"

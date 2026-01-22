@@ -12,7 +12,7 @@ export const usuarioCreadoTemplate = {
           <div class="header-container">
 
             <a href="${base}/index.html" class="logo">
-              <span class="logo-text">Symphony</span>
+              <span class="logo-text">CitrusSound</span>
             </a>
             
             <div class="user-actions">

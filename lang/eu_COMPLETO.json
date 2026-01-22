@@ -17,8 +17,8 @@
         "accessories": "Osagarriak eta aksesuak"
     },
     "hero": {
-        "title": "Ongi etorri Symphony Store-ra",
-        "subtitle": "Zure musika tresnen denda",
+        "title": "Ongi etorri CitrusSound-era",
+        "subtitle": "Zure musika hemen hasten da, jo ezazu",
         "delivery": "Bidalketa azkarra",
         "shipping": "Bidalketa doakoa €100 baino gehiagoko erosketetan",
         "warranty": "Berme hedatua",
@@ -103,7 +103,7 @@
         "contact": "kontaktua",
         "followUs": "JARRAITU GAITZAZU",
         "paymentMethods": "Ordainketa Metodoak",
-        "copyright": "© 2024 Symphony - Musika Tresnen Denda",
+        "copyright": "© 2024 CitrusSound - Musika Tresnen Denda",
         "categoriesList": {
             "strings": "Sokak",
             "percussion": "Perkusioa",
@@ -120,7 +120,7 @@
         },
         "contactInfo": {
             "phone": "+53 (555) 123-456",
-            "email": "info@symphony.com",
+            "email": "info@citrussound.com",
             "address": "Harmonia kalea 123, Musika Hiria",
             "hours": "Astelehenetik ostiralera: 10:00 - 19:00",
             "hoursWeekend": "Larunbata: 11:00 - 14:00"
