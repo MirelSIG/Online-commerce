@@ -9,11 +9,11 @@ export const heroTemplate = `
                 </div>
                 <div class="feature-item">
                     <i class="fas fa-box-open"></i>
-                    <span data-idioma="hero.shipping">Envío Gratuito</span>
+                    <span data-idioma="hero.shipping">Envio Gratuito</span>
                 </div>
                 <div class="feature-item">
                     <i class="fas fa-file-contract"></i>
-                    <span data-idioma="hero.warranty">3 años de garantía</span>
+                    <span data-idioma="hero.warranty">3 anos de garantia</span>
                 </div>
                 <div class="feature-item">
                     <i class="fas fa-credit-card"></i>
