@@ -14,7 +14,7 @@ export const headerTemplate = {
 
             <div class="logo">
                 <a href="${base}/index.html">
-                    <img src="${base}/img/logos/logo Symphony store.png">
+                    <img src="${base}/img/logos/logo_Song_Musical.png">
 
                 </a>
             </div>

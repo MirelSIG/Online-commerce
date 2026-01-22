@@ -1,10 +1,7 @@
 export const heroTemplate = `
 <section id="hero">
     <div class="hero-content">
-        <h1 data-idioma="hero.title">TU MUSICA EMPIEZA AQUI!</h1>
         <div class="hero-divider">
-            <h2 data-idioma="hero.subtitle" class="hero-subtitle">HAZLA SONAR</h2>
-            <h2 data-idioma="hero.subtitle" class="hero-subtitle-reflection">HAZLA SONAR</h2>
             <div class="hero-features">
                 <div class="feature-item">
                     <i class="fas fa-truck"></i>
