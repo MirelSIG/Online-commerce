@@ -35,7 +35,7 @@ export const footerTemplate = {
                 <h3>CONTACTO</h3>
                 <ul>
                     <li><span class="bullet"></span>+53 (555) 123-456</li>
-                    <li><span class="bullet"></span>info@citrussound.com</li>
+                    <li><span class="bullet"></span>info@songmusical.com</li>
                     <li><span class="bullet"></span>Calle Armonía 123, Ciudad Musical</li>
                 </ul>
             </div>

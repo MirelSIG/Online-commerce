@@ -17,7 +17,7 @@
         "accessories": "Accessories and complements"
     },
     "hero": {
-        "title": "Welcome to CitrusSound",
+        "title": "Welcome to SONG MUSICAL",
         "subtitle": "Your music starts here, make it sound",
         "delivery": "Fast delivery",
         "shipping": "Free shipping on orders over €100",
@@ -103,7 +103,7 @@
         "contact": "Contact",
         "followUs": "FOLLOW US",
         "paymentMethods": "Payment Methods",
-        "copyright": "© 2024 CitrusSound - Musical Instruments Store",
+        "copyright": "© 2024 SONG MUSICAL - Musical Instruments Store",
         "categoriesList": {
             "strings": "Strings",
             "percussion": "Percussion",
@@ -120,7 +120,7 @@
         },
         "contactInfo": {
             "phone": "+53 (555) 123-456",
-            "email": "info@citrussound.com",
+            "email": "info@songmusical.com",
             "address": "Calle Armonía 123, Ciudad Musical",
             "hours": "Monday-Friday: 10:00 - 19:00",
             "hoursWeekend": "Saturdays: 11:00 - 14:00"

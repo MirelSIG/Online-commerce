@@ -2,8 +2,8 @@
     position: relative;
     width: 100%;
     height: 500px;
-    background: linear-gradient(135deg, #FF8C42 0%, #FFD700 50%, #9ACD32 100%);
-    /* Gradiente cítrico */
+    background: linear-gradient(135deg, #FF6B35 0%, #FFA500 50%, #C1FF72 100%);
+    /* Gradiente cítrico intenso */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -13,7 +13,7 @@
     align-items: center;
     overflow: hidden;
     margin-top: 20px;
-    box-shadow: 0 8px 32px rgba(255, 140, 66, 0.3);
+    box-shadow: 0 8px 32px rgba(255, 107, 53, 0.4);
 }
 
 .hero-content {
@@ -63,7 +63,7 @@
 .hero-subtitle {
     font-family: 'Arial Black', sans-serif;
     font-size: 3.5rem;
-    background: linear-gradient(90deg, #FF8C42, #FFD700, #9ACD32);
+    background: linear-gradient(90deg, #FF6B35, #FFA500, #C1FF72);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -75,7 +75,7 @@
 .hero-subtitle-reflection {
     font-family: 'Arial Black', sans-serif;
     font-size: 3.5rem;
-    background: linear-gradient(90deg, #FF8C42, #FFD700, #9ACD32);
+    background: linear-gradient(90deg, #FF6B35, #FFA500, #C1FF72);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -111,7 +111,7 @@
 
 .feature-item i {
     font-size: 1.8rem;
-    color: #FF8C42;
+    color: #FF6B35;
     margin-bottom: 8px;
     transition: transform 0.3s ease;
 }

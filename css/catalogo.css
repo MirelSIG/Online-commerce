@@ -15,7 +15,7 @@ main h2 {
 /* Estilo del reloj en headerTemplate */
 #datetimeDisplay  {
   font-family: 'Montserrat', sans-serif;
-  color: #FF8C42;                     
+  color: #FF6B35;                     
   font-size: 14px;                      
   font-weight: 800;                      
 } 
@@ -23,18 +23,18 @@ main h2 {
 /* Tarjeta de producto */
 .producto {
   background-color: white;
-  border: 1px solid #FFD700;
+  border: 2px solid #FFA500;
   border-radius: 12px;
   width: 100%;
   padding: 1rem;
-  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.15);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
   transition: all 0.3s ease;
 }
 
 .producto:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(255, 140, 66, 0.3);
-  border-color: #FF8C42;
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4);
+  border-color: #FF6B35;
 }
 
 .producto figure {
@@ -68,15 +68,15 @@ main h2 {
 }
 .producto .precio {
   font-weight: bold;
-  color: #FF8C42;
+  color: #FF6B35;
   margin-top: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .cartAddItemBtn{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #FF8C42, #FFD700);
+  background: linear-gradient(135deg, #FF6B35, #FFA500);
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
   color: white;
@@ -88,7 +88,7 @@ main h2 {
 
 .cartAddItemBtn:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.4);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.5);
 }
   font-size: 1rem;
   text-decoration: none;
