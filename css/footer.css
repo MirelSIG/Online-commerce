@@ -16,7 +16,7 @@
 
 .lang-btn {
     padding: 8px 16px;
-    border: 2px solid #FF6B35;
+    border: 2px solid #9370DB;
     background: #FFFFFF;
     color: #36454E;
     font-family: 'Montserrat', sans-serif;
@@ -31,7 +31,7 @@
 }
 
 .lang-btn:hover {
-    background: #FF6B35;
+    background: #9370DB;
     color: #FFFFFF;
     transform: translateY(-2px);
     box-shadow: 0px 4px 8px rgba(255, 107, 53, 0.3);

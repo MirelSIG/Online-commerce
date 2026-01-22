@@ -1,6 +1,7 @@
 export const heroTemplate = `
 <section id="hero">
     <div class="hero-content">
+        <h1 data-idioma="hero.title">Song Musical, la Clave para tu Inspiración artística!</h1>
         <div class="hero-divider">
             <div class="hero-features">
                 <div class="feature-item">
