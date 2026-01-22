@@ -13,7 +13,7 @@
     align-items: center;
     overflow: hidden;
     margin-top: 20px;
-    background-color: #9370DB;
+    background: linear-gradient(135deg, #FF6B35, #FFA500);
 }
 
 .hero-content {

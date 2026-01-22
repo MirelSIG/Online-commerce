@@ -15,7 +15,7 @@ main h2 {
 /* Estilo del reloj en headerTemplate */
 #datetimeDisplay  {
   font-family: 'Montserrat', sans-serif;
-  color: #9370DB;                     
+  color: #FF6B35;                     
   font-size: 14px;                      
   font-weight: 800;                      
 } 
@@ -73,7 +73,7 @@ main h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9370DB;
+  background: linear-gradient(135deg, #FF6B35, #FFA500);
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
   color: white;
@@ -81,7 +81,7 @@ main h2 {
   font-size: 1rem;
   text-decoration: none;
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-  border: 2px solid #9370DB;
+  border: 2px solid #FFA500;
   margin: 0.5rem;
 }
 .cartAddItemBtn i {
