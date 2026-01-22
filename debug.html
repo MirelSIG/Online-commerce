@@ -48,6 +48,10 @@
         import('./js/idioma.js')
             .then(() => {
                 console.log('✓ idioma.js cargado');
+                return import('./components/hero.template.js');
+            })
+            .then(() => {
+                console.log('✓ hero.template.js cargado');
                 return import('./js/main.js');
             })
             .then(() => {
