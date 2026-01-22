@@ -97,7 +97,5 @@ class I18n {
 // Instancia global
 window.idioma = new I18n();
 
-// Inicializar al cargar
-document.addEventListener('DOMContentLoaded', () => {
-    idioma.loadLanguage(idioma.currentLang);
-});
+// NO auto-inicializar, dejar que main.js controle el flujo
+export { I18n };
