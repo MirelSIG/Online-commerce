@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - Symphony Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .debug-box {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .success { color: green; }
+        .error { color: red; }
+        .info { color: blue; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Página de Diagnóstico</h1>
+    
+    <div class="debug-box">
+        <h2>1. Verificación de DOM</h2>
+        <p id="dom-check">Verificando...</p>
+    </div>
+    
+    <div class="debug-box">
+        <h2>2. Test de Imports</h2>
+        <p id="import-check">Cargando módulos...</p>
+    </div>
+    
+    <div class="debug-box">
+        <h2>3. Consola del Navegador</h2>
+        <p>Abre la consola (F12) para ver logs detallados</p>
+    </div>
+
+    <script>
+        console.log('🟢 Debug.html cargado');
+        document.getElementById('dom-check').innerHTML = '<span class="success">✓ DOM cargado correctamente</span>';
+        
+        // Test de import básico
+        import('./js/idioma.js')
+            .then(() => {
+                console.log('✓ idioma.js cargado');
+                return import('./js/main.js');
+            })
+            .then(() => {
+                console.log('✓ main.js cargado');
+                document.getElementById('import-check').innerHTML = '<span class="success">✓ Módulos cargados correctamente</span>';
+            })
+            .catch(error => {
+                console.error('❌ Error cargando módulos:', error);
+                document.getElementById('import-check').innerHTML = `<span class="error">✗ Error: ${error.message}</span>`;
+            });
+    </script>
+</body>
+</html>
