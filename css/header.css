@@ -43,15 +43,15 @@
       transition: border 0.3s;
     }
     .search-bar input:focus {
-       border-color: #9370DB;
+       border-color: #FF6B35;
        }
     .search-bar button {
       position: absolute;
       right: 2px;
       top: 50%;
       transform: translateY(-50%);
-      background: #9370DB;
-      color: #FFD700;
+      background: #FF6B35;
+      color: #fff;
       border: none;
       width: 44px;
       height: 44px;
@@ -65,7 +65,7 @@
       align-items: center;
       gap: 30px;
       font-weight: 600;
-      color: #9370DB;
+      color: #FF6B35;
       font-size: 15px;
     }
 
@@ -109,7 +109,7 @@
   position: absolute;
   top: -8px;
   right: -10px;
-  background: #9370DB;
+  background: #FF6B35;
   color: white;
   width: 20px;
   height: 20px;
@@ -124,14 +124,14 @@
 .contactanos a {
   text-decoration: none; 
   font-size: 1.5rem; 
-  color:#9370DB; ;
+  color:#FF6B35; ;
 }
 
     
     .separator {
       width: 5px;
       height: 5rem;
-      background: #9370DB;
+      background: #FFA500;
     }
     .user-actions {
       display: flex;
@@ -151,7 +151,7 @@
       position: absolute;
       top: -8px;
       right: -12px;
-      background: #9370DB;
+      background: #FF6B35;
       color: white;
       font-size: 11px;
       width: 18px;
@@ -168,7 +168,7 @@
       display: flex;
       justify-content: center;
       height: 3rem;
-      background: #9370DB;
+      background: linear-gradient(135deg, #FF6B35, #FFA500);
       padding: 12px 40px;
       overflow-x: auto;
       white-space: nowrap;
