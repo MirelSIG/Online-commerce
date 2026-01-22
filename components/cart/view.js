@@ -110,8 +110,7 @@ export const cartView = {
         cartController.addItem(id)
         this.updateCartCount()
         console.log('🛒 Contador actualizado');
-    }
-
+        
         if (this.statusVisible) {
             this.draw()
         }
