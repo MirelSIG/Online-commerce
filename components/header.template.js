@@ -14,8 +14,7 @@ export const headerTemplate = {
 
             <div class="logo">
                 <a href="${base}/index.html">
-                    <img src="${base}/img/logos/logo_Song_Musical.png">
-
+                    <img src="${base}/img/logos/logo_Song_Musical.png" style="border-radius: 50px; clip-path: inset(0 round 50px);">
                 </a>
             </div>
 
