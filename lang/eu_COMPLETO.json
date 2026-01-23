@@ -16,6 +16,14 @@
         "keyboards": "Teklatuak eta pianoak",
         "accessories": "Osagarriak eta aksesuak"
     },
+    "hero": {
+        "title": "Song Musical, zure Inspirazio artistikoaren gakoa!",
+        "subtitle": "Zure musika hemen hasten da, jo ezazu",
+        "delivery": "Bidalketa azkarra",
+        "shipping": "Doako bidalketa 100€ baino gehiagoko erosketetan",
+        "warranty": "Berme luzatua",
+        "payment": "Ordainketa segurua"
+    },
     "contact": {
         "title": "Kontaktu informazioa:",
         "address": "Helbidea:",
