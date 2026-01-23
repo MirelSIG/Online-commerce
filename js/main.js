@@ -29,8 +29,8 @@ async function init() {
 
     // 3. Renderizar componentes estáticos
     header.init();
-    navbar.render();
     hero.render();
+    navbar.render();
     footer.render();
 
     // 4. Renderizar productos SOLO si existe el contenedor (página index)
