@@ -78,7 +78,7 @@ export const headerTemplate = {
                     'eu_COMPLETO': 'eu-ES'
                 };
                 const locale = localeMap[currentLang] || 'es-ES';
-                datetimeDisplay.textContent = now.toLocaleDateString(locale, options);
+                datetimeDisplay.textContent = now.toLocaleString(locale, options);
             }
         };
         
