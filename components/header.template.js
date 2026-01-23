@@ -20,7 +20,7 @@ export const headerTemplate = {
             </div>
 
             <div class="search-bar">
-                <input id="buscador-input" type="text" placeholder="Buscar tu instrumento">
+                <input id="buscador-input" type="text" data-idioma-placeholder="header.searchPlaceholder" placeholder="Buscar tu instrumento">
                 <button id="buscador-btn"><i class="fas fa-search"></i></button>
                 <div id="search-results"></div>
             </div>
@@ -28,7 +28,7 @@ export const headerTemplate = {
             <div class="top-right">
 
                 <div class="contactanos">
-                    <a href="${base}/pages/contacto.html">CONTACTANOS</a>
+                    <a href="${base}/pages/contacto.html" data-idioma="header.contact">CONTACTANOS</a>
                 </div>
 
                 <div class="separator"></div>
@@ -36,12 +36,12 @@ export const headerTemplate = {
                 <div class="user-actions">
                     <a href="${base}/pages/registro.html" style="color:#FF6B35;">
                         <i class="far fa-user" style="font-size:40px;"></i>
-                        <span>Mi cuenta</span>
+                        <span data-idioma="header.myAccount">Mi cuenta</span>
                     </a>
 
                     <a id="btnCart" href="#" style="color:#FF6B35;">
                         <i class="fas fa-shopping-cart" style="font-size:40px;"></i>
-                        <span>Carrito</span>
+                        <span data-idioma="header.cart">Carrito</span>
                         <span id="cartCount" class="cart-count">${obj.cartCount ? obj.cartCount : 0}</span>
                     </a>
                 </div>
