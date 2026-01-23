@@ -75,6 +75,10 @@ class I18n {
     changeLanguage(lang) {
         if (lang !== this.currentLang) {
             this.loadLanguage(lang);
+            // Actualizar el reloj con el nuevo idioma
+            if (window.headerTemplate && typeof window.headerTemplate.initDateTime === 'function') {
+                window.headerTemplate.initDateTime();
+            }
         }
     }
 

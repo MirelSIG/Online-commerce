@@ -32,6 +32,9 @@ export const header = {
                 window.idioma.translatePage();
             }
 
+            // Hacer headerTemplate accesible globalmente para actualizar fecha
+            window.headerTemplate = headerTemplate;
+
             // Inicializar reloj después de renderizar el HTML
             headerTemplate.initDateTime();
         }

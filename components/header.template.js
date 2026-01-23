@@ -69,11 +69,24 @@ export const headerTemplate = {
             };
             const datetimeDisplay = document.getElementById('datetimeDisplay');
             if (datetimeDisplay) {
-                datetimeDisplay.textContent = now.toLocaleDateString('es-ES', options);
+                // Obtener idioma actual del localStorage o idioma por defecto
+                const currentLang = localStorage.getItem('language') || 'es_COMPLETO';
+                // Mapear códigos de idioma a códigos de locale
+                const localeMap = {
+                    'es_COMPLETO': 'es-ES',
+                    'en_COMPLETO': 'en-US',
+                    'eu_COMPLETO': 'eu-ES'
+                };
+                const locale = localeMap[currentLang] || 'es-ES';
+                datetimeDisplay.textContent = now.toLocaleDateString(locale, options);
             }
         };
         
         updateDateTime();
-        setInterval(updateDateTime, 1000);
+        // Guardar el intervalo para poder actualizarlo si cambia el idioma
+        if (this.dateTimeInterval) {
+            clearInterval(this.dateTimeInterval);
+        }
+        this.dateTimeInterval = setInterval(updateDateTime, 1000);
     }
 };
