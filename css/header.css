@@ -43,6 +43,7 @@
       font-size: 16px;
       outline: none;
       transition: border 0.3s;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     }
     .search-bar input:focus {
        border-color: #FF6B35;
@@ -69,6 +70,7 @@
       font-weight: 600;
       color: #FF6B35;
       font-size: 15px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     }
 
  
@@ -126,7 +128,8 @@
 .contactanos a {
   text-decoration: none; 
   font-size: 1.5rem; 
-  color:#FF6B35; ;
+  color:#FF6B35;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
     
@@ -148,6 +151,7 @@
       align-items: center;
       gap: 8px;
       position: relative;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     }
     .cart-count {
       position: absolute;
@@ -190,6 +194,7 @@
       text-decoration: none;
       padding: 8px 0;
       transition: opacity 0.3s;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     }
     .main-menu a:hover { 
       opacity: 0.8; 
