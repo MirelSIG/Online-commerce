@@ -16,14 +16,6 @@
         "keyboards": "Teklatuak eta pianoak",
         "accessories": "Osagarriak eta aksesuak"
     },
-    "hero": {
-        "title": "Song Musical, zure Inspirazio artistikoaren gakoa!",
-        "subtitle": "Zure musika hemen hasten da, jo ezazu",
-        "delivery": "Bidalketa azkarra",
-        "shipping": "Bidalketa doakoa €100 baino gehiagoko erosketetan",
-        "warranty": "Berme hedatua",
-        "payment": "Ordainketa segurua"
-    },
     "contact": {
         "title": "Kontaktu informazioa:",
         "address": "Helbidea:",
@@ -130,8 +122,7 @@
         "select": "Hizkuntza hautatu"
     },
     "hero": {
-        "title": "ZURE MUSIKA HEMEN HASTEN DA!",
-        "subtitle": "JARRI SOINUAN",
+        "title": "Kanta Musikala, Zure Inspirazio Artistikorako Gakoa!",
         "delivery": "Bidalketa 24/48H",
         "shipping": "Bidalketa Doan",
         "warranty": "3 urteko bermea",

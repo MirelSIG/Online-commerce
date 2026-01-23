@@ -183,5 +183,13 @@ export const lang_eu =
         "totalItem": "Guztira:",
         "remove": "Ezabatu",
         "empty": "Zure saskia hutsik dago. Arakatu gure produktuak eta gehitu zerbait."
-    }
+    },
+    
+    "hero": {
+        "title": "Kanta Musikala, Zure Inspirazio Artistikorako Gakoa!",
+        "delivery": "24/48 orduko entrega",
+        "shipping": "Bidalketa Doan",
+        "warranty": "3 urteko bermea",
+        "payment": "Ordainketa Segurua"
+}
 };

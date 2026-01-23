@@ -177,8 +177,7 @@ export const lang_es =
     "select": "Seleccionar idioma"
   },
   "hero": {
-    "title": "TU MUSICA EMPIEZA AQUI!",
-    "subtitle": "HAZLA SONAR",
+    "title": "Song Musical, la Clave para tu Inspiración artística!",
     "delivery": "Entrega 24/48H",
     "shipping": "Envío Gratuito",
     "warranty": "3 años de garantía",

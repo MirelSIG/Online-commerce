@@ -126,13 +126,13 @@ main {
 .thumbnail:hover {
   opacity: 1;
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(106, 27, 154, 0.2);
+  box-shadow: 0 8px 20px rgba(244, 67, 54, 0.2);
 }
 
 .thumbnail.active { 
   opacity: 1;
-  border-color: #9C27B0;
-  box-shadow: 0 0 0 3px #9C27B0;
+  border-color: #F44336;
+  box-shadow: 0 0 0 3px #F44336;
 }
 
 .no-image img {
@@ -149,13 +149,13 @@ main {
 
 .product-detail__info h1#product-title {
   font-size: 2.8rem;
-  color: #6A1B9A;
+  color: #F44336;
   line-height: 1.2;
 }
 
 .category {
   font-size: 1.2rem;
-  color: #9C27B0;
+  color: #F44336;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -189,7 +189,7 @@ main {
 
 .price-iva {
   font-size: 1.3rem;
-  color: #6A1B9A;
+  color: #F44336;
   margin-top: 6px;
 }
 
@@ -228,7 +228,7 @@ main {
 /*  CARACTERÍSTICAS TÉCNICAS */
 .features h2 {
   font-size: 1.8rem;
-  color: #6A1B9A;
+  color: #F44336;
   margin-bottom: 16px;
   border-bottom: 2px solid #E0C3FC;
   padding-bottom: 8px;
@@ -254,14 +254,14 @@ main {
 }
 
 .features-list strong {
-  color: #6A1B9A;
+  color: #F44336;
   min-width: 140px;
   display: inline-block;
 }
 
 /* BOTÓN AÑADIR AL CARRITO  */
 .btn-add {
-  background: linear-gradient(135deg, #6A1B9A, #9C27B0);
+  background: linear-gradient(135deg, #F44336, #F44336);
   color: white;
   border: none;
   padding: 18px 36px;
@@ -277,7 +277,7 @@ main {
 .btn-add:hover:not(:disabled) {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(106, 27, 154, 0.45);
-  background: linear-gradient(135deg, #9C27B0, #AB47BC);
+  background: linear-gradient(135deg, #F44336, #F44336);
 }
 
 .btn-add:active:not(:disabled) {
@@ -308,7 +308,7 @@ main {
   display: inline-block;
   margin-top: 20px;
   padding: 14px 30px;
-  background: #6A1B9A;
+  background: #F44336;
   color: white;
   text-decoration: none;
   border-radius: 50px;
@@ -317,6 +317,6 @@ main {
 }
 
 .product-detail.error a:hover {
-  background: #9C27B0;
+  background: #F44336;
   transform: translateY(-3px);
 }
