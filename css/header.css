@@ -193,15 +193,13 @@
       color: white;
       text-decoration: none;
       padding: 8px 0;
-      transition: opacity 0.3s;
+      transition: all 0.3s ease;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      border-bottom: 2px solid transparent;
     }
     .main-menu a:hover { 
-      opacity: 0.8; 
-      background: #000;
-      color: white ;
-      padding: 8px 16px;
-      border-radius: 6px;
+      color: #C1FF72;
+      border-bottom: 2px solid #C1FF72;
     }
     
 
